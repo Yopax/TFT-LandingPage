@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/STFT/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed TFT</title>
+    
+<link rel="stylesheet" href="./Speed TFT_files/styles.css"></head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./Speed TFT_files/logo.svg" alt="logo">
+            <h2 class="logo-nane1">SPEED TACTICS</h2>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/STFT/index.html#">Inicio</a></li>
+                <li><a href="http://127.0.0.1:5500/STFT/index.html#">Comps</a></li>
+                <li><a href="http://127.0.0.1:5500/STFT/index.html#">Estadisticas</a></li>
+                <li><a href="http://127.0.0.1:5500/STFT/index.html#">Utilidades</a></li>
+                <li><a href="http://127.0.0.1:5500/STFT/index.html#">Team Builder</a></li>
+                <li><a href="http://127.0.0.1:5500/STFT/index.html#">Set 10 Info</a></li>
+            </ul>
+        </nav>
+        <div class="botones">
+            <a href="http://127.0.0.1:5500/STFT/index.html#"><img src="./Speed TFT_files/icon _donate_.svg"></a>
+            <a href="http://127.0.0.1:5500/STFT/index.html#"><img src="./Speed TFT_files/Idiomas.svg"></a>
+            <a href="http://127.0.0.1:5500/STFT/index.html#"><img src="./Speed TFT_files/icon _discord_.svg"></a>
+            <a href="http://127.0.0.1:5500/STFT/index.html#"><img src="./Speed TFT_files/icon _cog_.svg"></a>
+        </div>
+
+        <a onclick="openNav()" class="menu" href="http://127.0.0.1:5500/STFT/index.html#"><button>Menu</button></a>
+        <div id="mobile-menu" class="overlay">
+            <a onclick="closeNav()" href="http://127.0.0.1:5500/STFT/index.html" class="close">×</a>
+            <div class="overlay-content">
+                <a href="http://127.0.0.1:5500/STFT/index.html#">Inicio</a>
+                <a href="http://127.0.0.1:5500/STFT/index.html#">Comps</a>
+                <a href="http://127.0.0.1:5500/STFT/index.html#">Estadisticas</a>
+                <a href="http://127.0.0.1:5500/STFT/index.html#">Utilidades</a>
+                <a href="http://127.0.0.1:5500/STFT/index.html#">Team Builder</a>
+                <a href="http://127.0.0.1:5500/STFT/index.html#">Set 10 Info</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor-general">
+            <div class="contenedor-buscador">
+                <form action="https://www.google.com/search" method="get" class="search-bar">
+                    <div class="opciones-server">
+                        <select name="desplegable-server" id="serves">
+                            <option disabled="" selected="">LAS</option>
+                            
+                                <option value="text">NA</option>
+                                <option value="text">BR</option>
+                                <option value="text">EUNE</option>
+                                <option value="text">EUW</option>
+                                <option value="text">JP</option>
+                                <option value="text">KR</option>
+                                <option value="text">LAN</option>
+                                <option value="text">LAS</option>
+                                <option value="text">OCE</option>
+                                <option value="text">TR</option>
+                                <option value="text">RU</option>
+                                <option value="text">PH</option>
+                                <option value="text">SG</option>
+                                <option value="text">TH</option>
+                                <option value="text">TW</option>
+                                <option value="text">VN</option>
+                            
+                            
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Buscar Jugador" name="b">
+                    <button type="submit"><img src="./Speed TFT_files/icon _cog_.svg" alt=""></button>
+                </form>
+            </div>
+            <div class="contenedor-text">
+                <h4>The sky is the limi</h4>
+                <h1>
+                    "The harder you work, the greater the reward."
+                </h1>
+                <p>"Elevate your Teamfight Tactics game with our dedicated platform. Master strategies, 
+                    develop winning habits, and join a community of skilled players. Unlock your potential and become a 
+                    formidable tactician today!"</p>
+            </div>
+            <div></div>
+        </div>
+    </main>
+    <script type="text/javascript" src="./Speed TFT_files/script.js.descarga"></script>
+    
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

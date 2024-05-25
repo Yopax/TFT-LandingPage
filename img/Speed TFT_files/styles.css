@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-primario:linear-gradient(90deg, #005A82 0%, #058D9B 43.96%, #058D9B 33.33%, #058D9B 50%, #058D9B 66.67%, #058D9B 76.56%, #005A82 100%);
+    --color-secundario:white;
+    --color-terciario:black;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" , sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: rgba(114, 114, 114, 0.237);
+}
+header {
+    background: #005A82;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px;
+}
+.header .logo img {
+    height: 30px;
+    width: 30px;
+    transition: all 0.3s;
+}
+.header .logo {
+    display: flex;
+    color: var(--color-secundario);
+}
+.logo-nane1 {
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    transition: all 0.3s;
+    margin-left: 10px;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo :hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.header .nav-links li:hover {
+    background: #0AC8B9;
+    border-radius: 30px;
+    transition: all 150ms ease;
+
+}
+.header .nav-links a {
+    color: var(--color-secundario);
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+.botones  {
+    display: flex;
+    transition: all 0.3s;
+}
+.botones a {
+    padding: 6px;
+}
+
+.botones a:hover {
+    transform: scale(1.12);
+    background: #0AC8B9;
+}
+
+.menu {
+    display:none;
+}
+
+.header .btn button,
+.header .menu button{
+    font-family: "poppins";
+    font-weight: bold;
+    font-weight: 24px;
+    color: white;
+    padding: 9px 20px;
+    background:none;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover,
+.header .menu button:hover{
+    background-color: #0AC8B9;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/**/@media screen and (max-width: 1170px){
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+
+/**/@media screen and (max-width: 375px){
+    .header .logo h2{
+        display: none;
+    }
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+    .header{
+        padding-right: 10px ;
+    }
+}
+
+/**/@media screen and (max-width: 615px){
+    .header .logo h2{
+        display: none;
+    }
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+    .header{
+        padding-right: 10px ;
+    }
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #005A82;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.header .overlay a{
+    padding: 10px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1;
+    font-family: "poppins";
+}
+.header .overlay a:hover, 
+.header .overlay a:focus{
+    background-color: #0AC8B9;
+    color: white;
+    border-radius: 30px;
+    transform: scale(1.1);
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-height:450px) {
+    .header .overlay a{
+        font-size: 20px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/*MAIN*/
+
+.contenedor-general {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 50px;
+    background-position: center;
+    background-size: cover;
+    justify-content:center;
+
+}
+
+.search-bar {
+    width: 520px;
+    height: 60px;
+    background: #005A82;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 0px 10px;
+    margin:2% 32%;
+
+}
+.contenedor-buscador {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s;
+}
+::placeholder {
+    font-family: "poppins";
+    font-size: 20px;
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.search-bar button {
+    margin-right: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.opciones-server {
+    margin-left: 20px;
+}
+.opciones-server #serves {
+    text-decoration: none;
+    background:none;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    color: #0AC8B9;
+}
+.contenedor-text {
+    display: block;
+    margin: 0 auto;
+}
+.contenedor-text h4 {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 75%; /* 18px */
+    margin-top: 70px;
+}
+.contenedor-text h1 {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 30px 320px;
+    line-height: 0.8;
+}
+.contenedor-text p {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 75%; /* 12px */
+    margin: 30px 320px;
+    line-height: 1.5;
+}
+
+/**/@media screen and (max-width: 1170px){
+    .contenedor-text h1 {
+        font-size: 56px;
+        margin: 30px 150px;
+    }
+}
+
+/**/@media screen and (max-width: 720px){
+    .contenedor-text h1 {
+        font-size: 56px;
+        margin: 30px 150px;
+    }
+}
